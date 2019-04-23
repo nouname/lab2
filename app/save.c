@@ -26,6 +26,7 @@ void save(text txt, char *filename) {
     return;
   }
   process_forward(txt, save_line, f);
+  fclose(f);
 }
 
 static void save_line(int index, char *contents, int cursor, void *data) {
