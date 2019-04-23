@@ -200,5 +200,5 @@ TEST(textProcessing, editortests) {
     load(txt, "input.txt");
 
     process_forward(txt, driver, NULL);
-    EXPECT_NO_FATAL_FAILURE(process_forward(txt, driver, NULL););
+    EXPECT_NO_FATAL_FAILURE(process_forward(txt, driver, NULL));
 }
