@@ -194,11 +194,3 @@ TEST(cursorToBeginOfWord, editortests)
 
     EXPECT_EQ(txt->cursor->position, 0);
 }
-
-TEST(textProcessing, editortests) {
-    text txt = create_text();
-    load(txt, "input.txt");
-
-    process_forward(txt, driver, NULL);
-    EXPECT_NO_FATAL_FAILURE(process_forward(txt, driver, NULL));
-}
